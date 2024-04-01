@@ -6,6 +6,14 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    padding: 1em;
+    color: #222;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 h1 {
@@ -40,20 +48,20 @@ nav ul {
     font-weight: 500;
 }
 
-nav ul li {
-    margin: 0 1em;
-}
-
 nav ul li a:link, 
 nav ul li a:visited {
+    display: inline-block;
     text-decoration: none;
     color: black;
+    padding: 0.25em 0.5em;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
     background-color: black;
     color: #fff;
+    border-radius: 4px;
+    padding: 0.25em 0.5em;
     text-decoration: none;
 }
 
@@ -61,3 +69,178 @@ nav ul li a:focus {
     width: 30%;
 }
 
+.pack{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr;
+    gap: 1em;
+    grid-template-areas:
+    "pack1 pack1 pack1"
+    "pack2 pack3 pack4"
+    ;
+}
+
+.pack1:nth-child(1) {
+    grid-area: pack1;
+    border-radius: 8px;
+}
+
+.pack2:nth-child(2) {
+    grid-area: pack2;
+    border-radius: 8px;
+}
+
+.pack3:nth-child(3) {
+    grid-area: pack3;
+    border-radius: 8px;
+}
+
+.pack4:nth-child(4) {
+    grid-area: pack4;
+    border-radius: 8px;
+}
+
+.limit {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.5em 1.3em;
+    border-radius: 4px;
+
+}
+
+.dough {
+    background-color: #f8fafc;
+    background-color: rgb(154, 154, 154);
+    background-size: cover;
+
+}
+
+.dough-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    grid-template-areas:
+    "dough1"
+    "dough2"
+    ;
+}
+
+.pack1:nth-child(1) {
+    grid-area: pack1;
+    border-radius: 8px;
+}
+
+.pack2:nth-child(2) {
+    grid-area: pack2;
+    border-radius: 8px;
+}
+
+.pack3:nth-child(3) {
+    grid-area: pack3;
+    border-radius: 8px;
+}
+
+.sec1 {
+    margin-bottom: 2.7em;
+}
+
+.saying {
+    background-color: #000;
+    color: #fff;
+}
+
+.saying-h2 {
+    text-align: center;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+    grid-template-areas:
+    "review1"
+    "review2"
+    "review3"
+    ;
+}
+
+.review1:nth-child(1) {
+    grid-area: review1;
+    border-radius: 8px;
+    padding-bottom: 3em;
+}
+
+.review2:nth-child(2) {
+    grid-area: review2;
+    border-radius: 8px;
+    padding-bottom: 3em;
+}
+
+.review3:nth-child(3) {
+    grid-area: review3;
+    border-radius: 8px;
+}
+
+.try{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-areas:
+    "try1 try2"
+    "try3 try4"
+    ;
+    text-align: center;
+}
+
+.try1:nth-child(1) {
+    grid-area: try1;
+    border-radius: 8px;
+}
+
+.try2:nth-child(2) {
+    grid-area: try2;
+    border-radius: 8px;
+}
+
+.try3:nth-child(3) {
+    grid-area: try3;
+    border-radius: 8px;
+}
+
+.try4:nth-child(4) {
+    grid-area: try4;
+    border-radius: 8px;
+}
+
+.try div {
+    background-color: #a9a9a9;
+    border-radius: 8px;
+}
+
+.try-h2 {
+    text-align: center;
+}
+
+.try img {
+    border-radius: 8px 8px 0 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 5em;
+}
