@@ -244,3 +244,45 @@ footer {
     padding: 2em 0;
     margin-top: 5em;
 }
+
+/* Add a min-width media query for the screen size of 768px and above and adjust page to match the screenshot labeled 'product-page-768' */
+@media (min-width: 768px) {
+
+    .pack{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+        grid-template-areas:
+        "pack1 pack2"
+        "pack3 pack4"
+        ;
+    }
+    
+    .pack1:nth-child(1) {
+        grid-area: pack1;
+        border-radius: 8px;
+    }
+    
+    .pack2:nth-child(2) {
+        grid-area: pack2;
+        border-radius: 8px;
+    }
+    
+    .pack3:nth-child(3) {
+        grid-area: pack3;
+        border-radius: 8px;
+    }
+    
+    .pack4:nth-child(4) {
+        grid-area: pack4;
+        border-radius: 8px;
+    }
+
+}
+
+/* Add a min-width media query for the screen size of 960px and above and adjust page to match the screenshot labeled 'product-page-960' */
+@media (min-width: 960px) {
+
+
+
+}
