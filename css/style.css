@@ -24,6 +24,7 @@ h1 {
 h2 {
     font-size: 1.802rem;
     font-weight: 800;
+    text-align: center;
 }
 
 h3 {
@@ -159,9 +160,9 @@ nav ul li a:focus {
     color: #fff;
 }
 
-.saying-h2 {
+/* .saying-h2 {
     text-align: center;
-}
+} */
 
 .reviews {
     display: grid;
@@ -192,7 +193,7 @@ nav ul li a:focus {
     border-radius: 8px;
 }
 
-.try{
+.try {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -229,9 +230,9 @@ nav ul li a:focus {
     border-radius: 8px;
 }
 
-.try-h2 {
+/* .try-h2 {
     text-align: center;
-}
+} */
 
 .try img {
     border-radius: 8px 8px 0 0;
@@ -278,6 +279,84 @@ footer {
         border-radius: 8px;
     }
 
+    .dough-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        grid-template-areas:
+        "dough1 dough2"
+        ;
+    }
+    
+    .pack1:nth-child(1) {
+        grid-area: pack1;
+        border-radius: 8px;
+    }
+    
+    .pack2:nth-child(2) {
+        grid-area: pack2;
+        border-radius: 8px;
+    }
+    
+    .pack3:nth-child(3) {
+        grid-area: pack3;
+        border-radius: 8px;
+    }
+
+    .reviews {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1em;
+        grid-template-areas:
+        "review1 review2 review3"
+        ;
+    }
+    
+    .review1:nth-child(1) {
+        grid-area: review1;
+        border-radius: 8px;
+        padding-bottom: 3em;
+    }
+    
+    .review2:nth-child(2) {
+        grid-area: review2;
+        border-radius: 8px;
+        padding-bottom: 3em;
+    }
+    
+    .review3:nth-child(3) {
+        grid-area: review3;
+        border-radius: 8px;
+    }
+
+    .try{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 1em;
+        grid-template-areas:
+        "try1 try2 try3 try4"
+        ;
+    }
+    
+    .try1:nth-child(1) {
+        grid-area: try1;
+        border-radius: 8px;
+    }
+    
+    .try2:nth-child(2) {
+        grid-area: try2;
+        border-radius: 8px;
+    }
+    
+    .try3:nth-child(3) {
+        grid-area: try3;
+        border-radius: 8px;
+    }
+    
+    .try4:nth-child(4) {
+        grid-area: try4;
+        border-radius: 8px;
+    }
 }
 
 /* Add a min-width media query for the screen size of 960px and above and adjust page to match the screenshot labeled 'product-page-960' */
