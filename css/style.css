@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    /* max-width: ; */
-    /* font-family: ; */
 }
 
 body {
@@ -67,7 +65,7 @@ nav ul li a:focus {
 }
 
 .logo {
-    width: 30%;
+    width: 15%;
 }
 
 .pack{
@@ -230,10 +228,6 @@ nav ul li a:focus {
     border-radius: 8px;
 }
 
-/* .try-h2 {
-    text-align: center;
-} */
-
 .try img {
     border-radius: 8px 8px 0 0;
 }
@@ -242,7 +236,7 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
     margin-top: 5em;
 }
 
@@ -362,6 +356,9 @@ footer {
 /* Add a min-width media query for the screen size of 960px and above and adjust page to match the screenshot labeled 'product-page-960' */
 @media (min-width: 960px) {
 
-
+    .shop {
+        display: flex;
+        gap: 30px;
+    }
 
 }
