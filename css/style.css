@@ -4,8 +4,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    padding: 1em;
+    /* padding: 1em; */
     color: #222;
+    margin: 0;
+}
+
+header .wrapper {
+    padding: 0 1em;
 }
 
 .wrapper {
@@ -27,7 +32,7 @@ h2 {
 
 h3 {
     font-size: 1.266rem;
-    font-family: 700;
+    font-weight: 700;
 }
 
 img {
@@ -38,6 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0em 1em;
 }
 
 nav ul {
@@ -65,7 +71,16 @@ nav ul li a:focus {
 }
 
 .logo {
-    width: 15%;
+    max-width: 30%;
+    width: 150px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.red {
+    margin-top: 0;
 }
 
 .pack{
@@ -237,7 +252,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 /* Add a min-width media query for the screen size of 768px and above and adjust page to match the screenshot labeled 'product-page-768' */
@@ -276,7 +291,7 @@ footer {
     .dough-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        gap: 0;
+        gap: 2em;
         grid-template-areas:
         "dough1 dough2"
         ;
@@ -300,7 +315,7 @@ footer {
     .reviews {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        gap: 1em;
+        gap: 2em;
         grid-template-areas:
         "review1 review2 review3"
         ;
@@ -360,5 +375,18 @@ footer {
         display: flex;
         gap: 30px;
     }
+
+    .pack {
+        row-gap: 2em;
+        width: 50%;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+
+
+
 
 }
