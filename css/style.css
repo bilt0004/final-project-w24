@@ -135,6 +135,7 @@ blockquote {
     background-color: #f8fafc;
     background-color: rgb(154, 154, 154);
     background-size: cover;
+    padding-bottom: 1em;
 
 }
 
@@ -176,6 +177,8 @@ blockquote {
 /* .saying-h2 {
     text-align: center;
 } */
+
+
 
 .reviews {
     display: grid;
